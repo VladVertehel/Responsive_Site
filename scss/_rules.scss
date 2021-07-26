@@ -198,3 +198,44 @@ h1,h2,h3,h4,h5,h6{
         font-size: 12px;
     }
 }
+
+// GRID
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.grid-item{
+    height: 300px;
+
+    &-grey{
+        background-color: #838383;
+    }
+    &-white{
+        background-color: #dddddd;
+    }
+    &-black{
+        background-color: #252525;
+    }
+    &__img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: inherit;
+
+        &-item{
+            width: 48px;
+            height: 30px;
+        }
+    }
+}
+.grid-photos__btn{
+    padding: 45px 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    color: #8e8e8e;
+
+    &:hover{
+        background-color: #e2e2e2;
+        cursor: pointer;
+    }
+}

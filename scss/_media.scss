@@ -38,6 +38,9 @@
             row-gap: 60px;
         }
     }
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media(max-width:768px){
@@ -60,5 +63,8 @@
     .info-item{
         max-width: 220px;
         width: 100%;
+    }
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
